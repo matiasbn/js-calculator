@@ -13,3 +13,24 @@ Examples:
 {3+5}*2/(4+4)+0*(-68+25 → Syntax error
 
 ````
+
+## Usage
+
+In src/index.js, replace the expression for the expression you want to evaluate:
+```
+...
+13 const expression = '{3+5}*2/(4+4)+0*(-68+25';
+...
+```
+Then run the 'start' script:
+```
+yarn start
+```
+
+## Debug
+
+The [debug](https://www.npmjs.com/package/debug) library is implemented. It gives valuable information about the execution of the calculator.
+To use it use the debug script:
+```
+yarn debug
+```
