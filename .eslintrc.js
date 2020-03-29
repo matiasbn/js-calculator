@@ -16,6 +16,7 @@ module.exports = {
   },
   rules: {
     "no-case-declarations": 0,
-    "no-restricted-globals": 0
+    "no-restricted-globals": 0,
+    "max-len": 0
   },
 };

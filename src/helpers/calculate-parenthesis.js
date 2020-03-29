@@ -16,8 +16,8 @@ const calculateParenthesis = (separated) => {
   while (i < result.length) {
     const prev = result[i - 1];
     const current = result[i];
-    // Detect inner parenthesis, if current is number and previous is open parenthesis
-    if (openParenthesis.some((el) => el === prev) && current && Number.isInteger(current)) {
+    // Detect inner parenthesis, if current is not parenthesis and previous is open parenthesis
+    if (openParenthesis.some((el) => el === prev) && !openParenthesis.some((el) => el === current)) {
       const closeParenthesis = result.findIndex((el) => el === mapBalance[prev]);
       debugCalculate('closeParenthesis', closeParenthesis);
       const expression = result.slice(i, closeParenthesis);

@@ -1,12 +1,18 @@
+/* eslint-disable no-unused-expressions */
 import debug from 'debug';
 
 const debugCalculate = debug(`${process.env.DEBUG_NAMESPACE}::helper::calculate-inner-expression`);
 
 const mathOperations = ['+', '-', '*', '/'];
 
-const calculateInnerExpression = (arr) => {
+const calculateInnerExpression = (array) => {
+  // Clone array
+  const arr = [...array];
+  // Check if first number is negative and splice in case it is
+  arr[0] === '-' && arr.splice(0, 2, arr[1] * -1);
+
   // check if correctly formated
-  // length has to be odd
+  // arr length has to be odd
   if (arr.length % 2 === 0) return false;
 
   // all even elements have to be number
