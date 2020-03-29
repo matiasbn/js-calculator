@@ -1,6 +1,6 @@
 {
   "name": "js-calculator",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "js-calculator",
   "main": "index.js",
   "repository": "git@github.com:matiasbn/js-calculator.git",
