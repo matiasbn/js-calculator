@@ -15,5 +15,7 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
+    "no-case-declarations": 0,
+    "no-restricted-globals": 0
   },
 };
