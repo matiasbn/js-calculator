@@ -16,7 +16,12 @@ Examples:
 
 ## Usage
 
-In src/index.js, replace the expression for the expression you want to evaluate:
+Install all dependencies: 
+```
+yarn
+```
+
+Then, in src/index.js, replace the expression for the expression you want to evaluate:
 ```
 ...
 13 const expression = '{3+5}*2/(4+4)+0*(-68+25';
